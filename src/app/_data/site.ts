@@ -16,6 +16,15 @@ export type JournalEntry = {
   imageAlt: string;
 };
 
+export type RecipeEntry = {
+  title: string;
+  excerpt: string;
+  date: string;
+  category: string;
+  image: string;
+  imageAlt: string;
+};
+
 export const projects: Project[] = [
   {
     title: "Still waters",
@@ -79,9 +88,43 @@ export const journalEntries: JournalEntry[] = [
   },
 ];
 
+export const recipeEntries: RecipeEntry[] = [
+  {
+    title: "The lemon cake for slow afternoons",
+    excerpt:
+      "A tender, bright cake made for sharing, with a generous spoonful of crème fraîche on the side.",
+    date: "12.06.2025",
+    category: "Baking",
+    image:
+      "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=1200&q=85",
+    imageAlt: "A lemon cake served on a ceramic plate",
+  },
+  {
+    title: "Tomatoes, torn bread, summer",
+    excerpt:
+      "The almost-no-cook lunch that tastes like a table in the sun and asks very little of you.",
+    date: "28.05.2025",
+    category: "Seasonal",
+    image:
+      "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=1200&q=85",
+    imageAlt: "A fresh seasonal salad with tomatoes and herbs",
+  },
+  {
+    title: "A pot of green things",
+    excerpt:
+      "Comforting, vibrant, and adaptable: a simple recipe for the days when the market has been generous.",
+    date: "09.04.2025",
+    category: "Everyday",
+    image:
+      "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
+    imageAlt: "A bowl of vegetables and greens on a table",
+  },
+];
+
 export const navigation = [
   { label: "Work", href: "/work" },
   { label: "Journal", href: "/journal" },
+  { label: "Recipes", href: "/recipes" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
