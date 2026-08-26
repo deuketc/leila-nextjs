@@ -8,12 +8,14 @@ export type Project = {
 };
 
 export type JournalEntry = {
+  slug: string;
   title: string;
   excerpt: string;
   date: string;
   category: string;
   image: string;
   imageAlt: string;
+  body: string[];
 };
 
 export type RecipeEntry = {
@@ -57,6 +59,7 @@ export const projects: Project[] = [
 
 export const journalEntries: JournalEntry[] = [
   {
+    slug: "a-slower-way-to-see-the-coast",
     title: "A slower way to see the coast",
     excerpt:
       "On walking without a shot list, following the weather, and finding photographs in the pauses.",
@@ -65,8 +68,14 @@ export const journalEntries: JournalEntry[] = [
     image:
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85",
     imageAlt: "A quiet road leading through a coastal landscape",
+    body: [
+      "The coast has a way of making time feel wider. On this particular morning, the weather moved faster than I did, drawing long veils of rain across the water and then opening again to a clear strip of blue.",
+      "I had arrived with a list of photographs in mind. I left it in the car. Without the pressure to make a picture, there was more room to notice the small things: a line of seaweed, a house light coming on, the shape of a path after the tide had turned.",
+      "These are often the photographs I keep. Not the grand view, but the quiet evidence that I was there and paying attention.",
+    ],
   },
   {
+    slug: "in-conversation-with-natural-light",
     title: "In conversation with natural light",
     excerpt:
       "A few thoughts on making portraits that feel unhurried, open, and like the person in front of the lens.",
@@ -75,8 +84,14 @@ export const journalEntries: JournalEntry[] = [
     image:
       "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=85",
     imageAlt: "A portrait in warm natural light",
+    body: [
+      "The best portrait sessions rarely begin with the camera. They begin with a cup of tea, a walk around the room, and enough time for the day to settle into itself.",
+      "Natural light gives us a generous starting point. It shifts gently, finds the edges of a face, and lets the person in front of me remain themselves rather than becoming a performance.",
+      "My role is mostly to make space for that to happen. The photograph arrives somewhere in the conversation, usually just after everyone has stopped looking for it.",
+    ],
   },
   {
+    slug: "notes-from-northumberland",
     title: "Notes from Northumberland",
     excerpt:
       "Three days, one old camera, and a landscape that changed completely every hour.",
@@ -85,6 +100,11 @@ export const journalEntries: JournalEntry[] = [
     image:
       "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85",
     imageAlt: "A mountain landscape reflected in a lake",
+    body: [
+      "Northumberland changes character by the hour. The road north was bright and open; by late afternoon, the hills had disappeared behind a wall of cloud.",
+      "I kept returning to the same stretch of water with an old camera and no particular plan. Each visit made the landscape feel less like a subject and more like a conversation.",
+      "There is a particular pleasure in letting a place stay unfinished. A photograph can hold a question for a while before it needs to become an answer.",
+    ],
   },
 ];
 

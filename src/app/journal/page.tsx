@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { SiteFooter, SiteHeader } from "../_components/site-header";
 import { journalEntries } from "../_data/site";
@@ -24,7 +25,11 @@ export default function JournalPage() {
         </div>
         <div className="journal-list">
           {journalEntries.map((entry) => (
-            <article className="journal-entry" key={entry.title}>
+            <Link
+              className="journal-entry"
+              href={`/journal/${entry.slug}`}
+              key={entry.slug}
+            >
               <div className="journal-image-wrap">
                 <Image
                   src={entry.image}
@@ -45,7 +50,7 @@ export default function JournalPage() {
                   Read entry <span aria-hidden="true">↗</span>
                 </span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </main>
