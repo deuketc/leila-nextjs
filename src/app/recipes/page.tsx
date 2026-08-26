@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 import { SiteFooter, SiteHeader } from "../_components/site-header";
@@ -24,7 +25,11 @@ export default function RecipesPage() {
         </div>
         <div className="journal-list">
           {recipeEntries.map((entry) => (
-            <article className="journal-entry" key={entry.title}>
+            <Link
+              className="journal-entry"
+              href={`/recipes/${entry.slug}`}
+              key={entry.slug}
+            >
               <div className="journal-image-wrap">
                 <Image
                   src={entry.image}
@@ -45,7 +50,7 @@ export default function RecipesPage() {
                   View recipe <span aria-hidden="true">↗</span>
                 </span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </main>

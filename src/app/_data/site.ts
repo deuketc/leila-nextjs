@@ -26,12 +26,14 @@ export type JournalEntry = {
 };
 
 export type RecipeEntry = {
+  slug: string;
   title: string;
   excerpt: string;
   date: string;
   category: string;
   image: string;
   imageAlt: string;
+  body: string[];
 };
 
 export const projects: Project[] = [
@@ -165,6 +167,7 @@ export const latestJournalEntry = journalEntries[0];
 
 export const recipeEntries: RecipeEntry[] = [
   {
+    slug: "the-lemon-cake-for-slow-afternoons",
     title: "The lemon cake for slow afternoons",
     excerpt:
       "A tender, bright cake made for sharing, with a generous spoonful of crème fraîche on the side.",
@@ -173,8 +176,14 @@ export const recipeEntries: RecipeEntry[] = [
     image:
       "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=1200&q=85",
     imageAlt: "A lemon cake served on a ceramic plate",
+    body: [
+      "This is the kind of cake that makes an afternoon feel like it has nowhere else to be. It is bright with lemon, tender in the middle, and best served in generous slices.",
+      "Beat the butter and sugar until pale, then add the eggs one at a time. Fold through the flour, zest, and a little crème fraîche before baking until golden and just springy to the touch.",
+      "Finish with a simple lemon glaze while the cake is still warm. Let it settle, then serve with another spoonful of crème fraîche and a pot of tea.",
+    ],
   },
   {
+    slug: "tomatoes-torn-bread-summer",
     title: "Tomatoes, torn bread, summer",
     excerpt:
       "The almost-no-cook lunch that tastes like a table in the sun and asks very little of you.",
@@ -183,8 +192,14 @@ export const recipeEntries: RecipeEntry[] = [
     image:
       "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=1200&q=85",
     imageAlt: "A fresh seasonal salad with tomatoes and herbs",
+    body: [
+      "Choose the ripest tomatoes you can find and let them do most of the work. This is a generous, unfussy salad for warm days and hungry company.",
+      "Tear good bread into rough pieces and toast until crisp at the edges. Toss it with tomatoes, torn basil, olive oil, red wine vinegar, and plenty of flaky salt.",
+      "Leave everything together for ten minutes before serving so the bread can catch all the sweet tomato juices.",
+    ],
   },
   {
+    slug: "a-pot-of-green-things",
     title: "A pot of green things",
     excerpt:
       "Comforting, vibrant, and adaptable: a simple recipe for the days when the market has been generous.",
@@ -193,6 +208,11 @@ export const recipeEntries: RecipeEntry[] = [
     image:
       "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85",
     imageAlt: "A bowl of vegetables and greens on a table",
+    body: [
+      "There is no strict recipe here, only a useful rhythm: start with onions, add whatever green vegetables look best, and give everything time to soften.",
+      "Pour in stock, add a handful of beans, and simmer until the vegetables are tender. Blend only a little so the finished soup keeps some texture.",
+      "Serve with herbs, good olive oil, and bread rubbed with garlic. It is even better the next day.",
+    ],
   },
 ];
 
