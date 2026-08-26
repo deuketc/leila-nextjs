@@ -5,6 +5,12 @@ export type Project = {
   image: string;
   imageAlt: string;
   size: "large" | "small";
+  gallery: GalleryImage[];
+};
+
+export type GalleryImage = {
+  image: string;
+  imageAlt: string;
 };
 
 export type JournalEntry = {
@@ -36,6 +42,23 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1500&q=85",
     imageAlt: "A misty coastal landscape with a calm sea",
     size: "large",
+    gallery: [
+      {
+        image:
+          "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85",
+        imageAlt: "A misty coastal landscape with a calm sea",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=85",
+        imageAlt: "A wide view across the Hebridean coast",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=85",
+        imageAlt: "Cloud and light over the water",
+      },
+    ],
   },
   {
     title: "A quiet morning",
@@ -45,6 +68,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1100&q=85",
     imageAlt: "Portrait of a woman in soft natural light",
     size: "small",
+    gallery: [],
   },
   {
     title: "Open country",
@@ -54,8 +78,11 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1100&q=85",
     imageAlt: "A sunlit woodland path",
     size: "small",
+    gallery: [],
   },
 ];
+
+export const latestProject = projects[0];
 
 export const journalEntries: JournalEntry[] = [
   {
