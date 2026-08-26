@@ -23,7 +23,7 @@ export default function GalleryPage() {
             near and far.
           </p>
         </div>
-        <div className="project-grid work-grid">
+        <div className="project-grid project-list">
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}

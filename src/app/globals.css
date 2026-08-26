@@ -85,7 +85,6 @@ h2 { font-size: clamp(2.6rem, 5vw, 5rem); line-height: 0.95; margin-bottom: 0; }
   margin-top: 2rem;
   padding-bottom: 0.45rem;
 }
-.featured-work { border-top: 1px solid var(--line); padding-bottom: 7rem; padding-top: 2rem; }
 .latest-article {
   align-items: center;
   border-top: 1px solid var(--line);
@@ -172,7 +171,7 @@ h2 { font-size: clamp(2.6rem, 5vw, 5rem); line-height: 0.95; margin-bottom: 0; }
 .inner-page { min-height: calc(100vh - 10rem); padding-bottom: 8rem; padding-top: clamp(5rem, 10vw, 9rem); }
 .page-heading { margin-bottom: 7rem; max-width: 800px; }
 .page-heading h1 { font-size: clamp(3.8rem, 8vw, 7.5rem); margin-bottom: 2rem; }
-.work-grid { margin-top: 2rem; }
+.project-list { margin-top: 2rem; }
 .journal-list {
   border-top: 1px solid var(--line);
 }
