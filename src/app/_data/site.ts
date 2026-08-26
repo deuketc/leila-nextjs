@@ -169,7 +169,7 @@ export const recipeEntries: RecipeEntry[] = [
 ];
 
 export const navigation = [
-  { label: "Work", href: "/work" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Journal", href: "/journal" },
   { label: "Recipes", href: "/recipes" },
   { label: "About", href: "/about" },

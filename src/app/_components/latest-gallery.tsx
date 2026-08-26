@@ -13,7 +13,7 @@ export function LatestGallery() {
         <p className="eyebrow">Latest gallery</p>
         <h2 id="gallery-heading">{latestProject.title}</h2>
       </div>
-      <Link className="gallery-link" href="/work">
+      <Link className="gallery-link" href="/gallery">
         <div className="gallery-grid">
           {latestProject.gallery.map((image) => (
             <div className="gallery-image-wrap" key={image.imageAlt}>

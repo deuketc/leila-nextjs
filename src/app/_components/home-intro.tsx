@@ -9,8 +9,8 @@ export function HomeIntro() {
         Leila Khan makes photographs about presence, place, and the quiet
         details that stay with us.
       </p>
-      <Link className="text-link" href="/work">
-        Explore the work <span aria-hidden="true">↗</span>
+      <Link className="text-link" href="/gallery">
+        Explore the gallery <span aria-hidden="true">↗</span>
       </Link>
     </section>
   );
