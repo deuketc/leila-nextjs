@@ -36,6 +36,7 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
   padding-bottom: 2rem;
   padding-top: 2rem;
+  width: 100%;
 }
 .wordmark {
   font-family: var(--font-display), Georgia, serif;
@@ -43,7 +44,7 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.01em;
 }
 .wordmark span { color: var(--accent); }
-nav { display: flex; gap: clamp(1rem, 3vw, 3rem); }
+nav { display: flex; gap: clamp(1rem, 3vw, 3rem); margin-left: auto; }
 nav a, .eyebrow, .site-footer, .project-meta, .project-location {
   font-size: 0.69rem;
   letter-spacing: 0.12em;
