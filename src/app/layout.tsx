@@ -15,11 +15,11 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "Leila H. Photography",
-    template: "%s | Leila H. Photography",
+    default: "Leila Khan Photography",
+    template: "%s | Leila Khan Photography",
   },
   description:
-    "Photography by Leila H. across portrait, editorial, and landscape.",
+    "Photography by Leila Khan across portrait, editorial, and landscape.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

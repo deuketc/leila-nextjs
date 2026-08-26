@@ -5,7 +5,7 @@ import { SiteFooter, SiteHeader } from "../_components/site-header";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn about Leila H. and her approach to photography.",
+  description: "Learn about Leila Khan and her approach to photography.",
 };
 
 export default function AboutPage() {
@@ -32,7 +32,7 @@ export default function AboutPage() {
               and the spaces between the obvious moments.
             </p>
             <p>
-              Based in London and available worldwide, she works across
+              Based in Auckland and available worldwide, she works across
               portrait, editorial, and commissioned stories. Her process is
               thoughtful and collaborative, leaving room for a little chance
               along the way.

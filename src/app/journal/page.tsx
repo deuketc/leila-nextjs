@@ -7,7 +7,8 @@ import { journalEntries } from "../_data/site";
 
 export const metadata: Metadata = {
   title: "Journal",
-  description: "Field notes, process, and stories from photographer Leila H.",
+  description:
+    "Field notes, process, and stories from photographer Leila Khan.",
 };
 
 export default function JournalPage() {

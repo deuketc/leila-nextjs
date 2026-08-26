@@ -7,7 +7,7 @@ import { projects } from "../_data/site";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Selected portrait, editorial, and landscape photography by Leila H.",
+    "Selected portrait, editorial, and landscape photography by Leila Khan.",
 };
 
 export default function WorkPage() {

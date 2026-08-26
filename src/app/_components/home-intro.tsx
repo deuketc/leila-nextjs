@@ -3,11 +3,11 @@ import Link from "next/link";
 export function HomeIntro() {
   return (
     <section className="home-intro page-shell">
-      <p className="eyebrow">Photographer / London + beyond</p>
+      <p className="eyebrow">Photographer / Auckland + beyond</p>
       <h1>Images with room to breathe.</h1>
       <p className="intro-copy">
-        Leila H. makes photographs about presence, place, and the quiet details
-        that stay with us.
+        Leila Khan makes photographs about presence, place, and the quiet
+        details that stay with us.
       </p>
       <Link className="text-link" href="/work">
         Explore the work <span aria-hidden="true">↗</span>

@@ -63,7 +63,7 @@ export const projects: Project[] = [
   {
     title: "A quiet morning",
     category: "Portraits",
-    location: "London",
+    location: "Auckland",
     image:
       "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1100&q=85",
     imageAlt: "Portrait of a woman in soft natural light",

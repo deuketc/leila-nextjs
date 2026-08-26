@@ -6,7 +6,7 @@ import { SiteFooter, SiteHeader } from "../_components/site-header";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Leila H. about photography commissions and projects.",
+    "Get in touch with Leila Khan about photography commissions and projects.",
 };
 
 export default function ContactPage() {
@@ -30,7 +30,7 @@ export default function ContactPage() {
             hello@leilahphotography.com <span aria-hidden="true">↗</span>
           </Link>
           <div className="contact-meta">
-            <p>Based in London</p>
+            <p>Based in Auckland</p>
             <p>Available worldwide</p>
             <p>Instagram / @leilahphotography</p>
           </div>

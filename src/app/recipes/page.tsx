@@ -6,7 +6,7 @@ import { recipeEntries } from "../_data/site";
 
 export const metadata: Metadata = {
   title: "Recipes",
-  description: "Seasonal recipes and simple pleasures from Leila H.",
+  description: "Seasonal recipes and simple pleasures from Leila Khan.",
 };
 
 export default function RecipesPage() {
