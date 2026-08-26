@@ -5,7 +5,10 @@ import type { Project } from "../_data/site";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <Link className={`project-card ${project.size}`} href="/journal">
+    <Link
+      className={`project-card ${project.size}`}
+      href={`/gallery/${project.slug}`}
+    >
       <div className="project-image-wrap">
         <Image
           src={project.image}

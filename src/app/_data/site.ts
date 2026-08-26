@@ -1,4 +1,5 @@
 export type Project = {
+  slug: string;
   title: string;
   category: string;
   location: string;
@@ -35,6 +36,7 @@ export type RecipeEntry = {
 
 export const projects: Project[] = [
   {
+    slug: "still-waters",
     title: "Still waters",
     category: "Editorial",
     location: "The Hebrides",
@@ -61,6 +63,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "a-quiet-morning",
     title: "A quiet morning",
     category: "Portraits",
     location: "Auckland",
@@ -68,9 +71,21 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1100&q=85",
     imageAlt: "Portrait of a woman in soft natural light",
     size: "small",
-    gallery: [],
+    gallery: [
+      {
+        image:
+          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=85",
+        imageAlt: "Portrait of a woman in soft natural light",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=85",
+        imageAlt: "A portrait beside a sunlit window",
+      },
+    ],
   },
   {
+    slug: "open-country",
     title: "Open country",
     category: "Landscape",
     location: "Northumberland",
@@ -78,7 +93,18 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1100&q=85",
     imageAlt: "A sunlit woodland path",
     size: "small",
-    gallery: [],
+    gallery: [
+      {
+        image:
+          "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=85",
+        imageAlt: "A sunlit woodland path",
+      },
+      {
+        image:
+          "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85",
+        imageAlt: "Open mountains under a wide sky",
+      },
+    ],
   },
 ];
 

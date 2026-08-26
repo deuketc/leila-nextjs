@@ -261,6 +261,38 @@ h2 { font-size: clamp(2.6rem, 5vw, 5rem); line-height: 0.95; margin-bottom: 0; }
   margin: 5rem auto 0;
   max-width: 600px;
 }
+.gallery-detail {
+  padding-bottom: 8rem;
+  padding-top: 3rem;
+}
+.gallery-detail-heading {
+  margin: clamp(5rem, 12vw, 10rem) auto 5rem;
+  max-width: 900px;
+  text-align: center;
+}
+.gallery-detail-heading h1 {
+  font-size: clamp(4rem, 10vw, 9rem);
+  margin-bottom: 0;
+  max-width: none;
+}
+.gallery-detail-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.gallery-detail-image {
+  aspect-ratio: 1 / 1.2;
+  background: #ded9d0;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-detail-image-0 {
+  aspect-ratio: 1 / 1.35;
+  grid-column: 1 / -1;
+}
+.gallery-detail-image img {
+  object-fit: cover;
+}
 .journal-body p {
   color: var(--muted);
   font-size: 1.05rem;
@@ -316,6 +348,10 @@ h2 { font-size: clamp(2.6rem, 5vw, 5rem); line-height: 0.95; margin-bottom: 0; }
   .journal-detail-heading .journal-entry-meta { text-align: left; }
   .journal-detail-image { aspect-ratio: 0.9; }
   .journal-body { margin-top: 3.5rem; }
+  .gallery-detail { padding-bottom: 5rem; padding-top: 1.5rem; }
+  .gallery-detail-heading { margin-bottom: 3rem; margin-top: 5rem; }
+  .gallery-detail-grid { display: block; }
+  .gallery-detail-image { margin-bottom: 0.5rem; }
   .contact-details { display: block; }
   .contact-email { display: block; margin-bottom: 2rem; overflow-wrap: anywhere; }
   .contact-meta { text-align: left; }
