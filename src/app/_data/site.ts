@@ -135,6 +135,8 @@ export const journalEntries: JournalEntry[] = [
   },
 ];
 
+export const latestJournalEntry = journalEntries[0];
+
 export const recipeEntries: RecipeEntry[] = [
   {
     title: "The lemon cake for slow afternoons",
