@@ -18,9 +18,8 @@ export function HomeIntro() {
       <div className="home-intro-copy page-shell">
         <p className="eyebrow">Photographer / Auckland + beyond</p>
         <h1>
-          <span>Images</span>
-          <span>with room</span>
-          <span>to breathe.</span>
+          <span>Images with</span>
+          <span>room to breathe.</span>
         </h1>
         <p className="intro-copy">
           Leila Khan makes photographs about presence, place, and the quiet
