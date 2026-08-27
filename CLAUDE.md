@@ -17,5 +17,6 @@
 ## Changes
 
 - Preserve the generated Next.js guidance in `AGENTS.md`.
+- Follow `docs/design-direction.md` for visual and interaction decisions.
 - Prefer small, focused changes that match the existing project structure.
 - Do not add CMS integration, dependencies, or abstractions until the required content model and API contract are known.
