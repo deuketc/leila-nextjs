@@ -14,7 +14,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <Image
           src={project.image}
           alt={project.imageAlt}
-          className={styles.image}
+          className="zoom-media"
           fill
           sizes="(max-width: 700px) 100vw, 50vw"
         />

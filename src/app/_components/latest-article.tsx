@@ -14,6 +14,7 @@ export function LatestArticle() {
         <Image
           src={latestJournalEntry.image}
           alt={latestJournalEntry.imageAlt}
+          className="zoom-media"
           fill
           sizes="(max-width: 700px) 100vw, 55vw"
         />

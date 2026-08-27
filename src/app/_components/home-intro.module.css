@@ -4,7 +4,7 @@
   position: relative;
 }
 .image {
-  background: #ded9d0;
+  background: var(--placeholder);
   height: min(78vh, 820px);
   position: absolute;
   right: clamp(1.25rem, 4vw, 4.5rem);

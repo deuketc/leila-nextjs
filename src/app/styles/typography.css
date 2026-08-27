@@ -1,16 +1,10 @@
-.wordmark {
-  font-family: var(--font-display), sans-serif;
-  font-size: 1.8rem;
-  letter-spacing: 0.01em;
-}
-.wordmark span { color: var(--accent); }
-nav a, .eyebrow, .site-footer, .project-meta, .project-location {
+.eyebrow, .project-meta, .project-location {
   font-size: 0.69rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
-nav a, .text-link, .contact-email { transition: color 180ms ease; }
-nav a:hover, .text-link:hover, .contact-email:hover { color: var(--accent); }
+.text-link, .contact-email { transition: color 180ms ease; }
+.text-link:hover, .contact-email:hover { color: var(--accent); }
 .eyebrow { color: var(--muted); margin: 0 0 1.5rem; }
 h1, h2, p { margin-top: 0; }
 h1, h2 {

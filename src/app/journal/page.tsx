@@ -35,7 +35,7 @@ export default function JournalPage() {
                 <Image
                   src={entry.image}
                   alt={entry.imageAlt}
-                  className="journal-image"
+                  className="journal-image zoom-media"
                   fill
                   sizes="(max-width: 700px) 100vw, 33vw"
                 />

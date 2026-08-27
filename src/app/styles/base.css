@@ -6,6 +6,7 @@
   --paper: #ffffff;
   --line: #d7d2c8;
   --accent: #c85e3d;
+  --placeholder: #ded9d0;
 }
 
 @theme inline {
