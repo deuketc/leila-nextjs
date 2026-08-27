@@ -99,6 +99,10 @@ nav a:hover, .text-link:hover, .contact-email:hover { color: var(--accent); }
 .home-intro .text-link {
   margin-left: 44%;
 }
+.home-intro .intro-copy {
+  font-size: clamp(1.05rem, 1.35vw, 1.35rem);
+  max-width: 440px;
+}
 .home-intro-caption,
 .home-intro-scroll {
   bottom: 2rem;
@@ -117,6 +121,23 @@ nav a:hover, .text-link:hover, .contact-email:hover { color: var(--accent); }
 .home-intro-caption span:last-child { color: var(--ink); }
 .home-intro-scroll {
   right: clamp(1.25rem, 4vw, 4.5rem);
+}
+@media (min-width: 1600px) {
+  .home-intro-image {
+    height: min(82vh, 980px);
+    width: min(61vw, 1180px);
+  }
+  .home-intro-copy {
+    max-width: 1800px;
+  }
+  .home-intro h1 {
+    font-size: clamp(10rem, 11vw, 14rem);
+    max-width: 1200px;
+  }
+  .home-intro .intro-copy {
+    font-size: clamp(1.25rem, 1.45vw, 1.6rem);
+    max-width: 500px;
+  }
 }
 .eyebrow { color: var(--muted); margin: 0 0 1.5rem; }
 h1, h2, p { margin-top: 0; }
