@@ -53,9 +53,70 @@ nav a, .eyebrow, .site-footer, .project-meta, .project-location {
 nav a, .text-link, .contact-email { transition: color 180ms ease; }
 nav a:hover, .text-link:hover, .contact-email:hover { color: var(--accent); }
 .home-intro {
-  min-height: min(680px, 70vh);
-  padding-bottom: 6rem;
-  padding-top: clamp(6rem, 14vw, 12rem);
+  min-height: calc(100svh - 5.5rem);
+  overflow: hidden;
+  position: relative;
+}
+.home-intro-image {
+  background: #ded9d0;
+  height: min(78vh, 820px);
+  position: absolute;
+  right: clamp(1.25rem, 4vw, 4.5rem);
+  top: clamp(2rem, 8vw, 7rem);
+  width: min(61vw, 880px);
+}
+.home-intro-image img {
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+.home-intro-copy {
+  padding-bottom: 7rem;
+  padding-top: clamp(5rem, 13vw, 11rem);
+  position: relative;
+  z-index: 1;
+}
+.home-intro-copy .eyebrow {
+  margin-left: 7%;
+}
+.home-intro h1 {
+  font-size: clamp(4.5rem, 11vw, 11.5rem);
+  line-height: 0.78;
+  margin-bottom: 3rem;
+  max-width: 980px;
+}
+.home-intro h1 span {
+  display: block;
+}
+.home-intro h1 span:nth-child(2) {
+  margin-left: 14%;
+}
+.home-intro h1 span:nth-child(3) {
+  margin-left: 5%;
+}
+.home-intro .intro-copy {
+  margin-left: 44%;
+}
+.home-intro .text-link {
+  margin-left: 44%;
+}
+.home-intro-caption,
+.home-intro-scroll {
+  bottom: 2rem;
+  color: var(--muted);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.home-intro-caption {
+  display: flex;
+  gap: 1rem;
+  left: clamp(1.25rem, 4vw, 4.5rem);
+}
+.home-intro-caption span:last-child { color: var(--ink); }
+.home-intro-scroll {
+  right: clamp(1.25rem, 4vw, 4.5rem);
 }
 .eyebrow { color: var(--muted); margin: 0 0 1.5rem; }
 h1, h2, p { margin-top: 0; }
@@ -371,7 +432,21 @@ h2 { font-size: clamp(2.6rem, 5vw, 5rem); line-height: 0.95; margin-bottom: 0; }
   .site-header { align-items: flex-start; }
   nav { gap: 0.8rem; }
   nav a { font-size: 0.6rem; }
-  .home-intro { min-height: auto; padding-bottom: 8rem; padding-top: 5rem; }
+  .home-intro { min-height: auto; }
+  .home-intro-image {
+    height: 64vh;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 88%;
+  }
+  .home-intro-copy { padding-bottom: 7rem; padding-top: 3.5rem; }
+  .home-intro-copy .eyebrow { margin-left: 0; }
+  .home-intro h1 { font-size: clamp(4rem, 17vw, 7.5rem); margin-bottom: 2.5rem; }
+  .home-intro h1 span:nth-child(2), .home-intro h1 span:nth-child(3) { margin-left: 0; }
+  .home-intro .intro-copy, .home-intro .text-link { margin-left: 12%; }
+  .home-intro-caption { bottom: 1.5rem; left: 1.25rem; }
+  .home-intro-scroll { bottom: 1.5rem; right: 1.25rem; }
   .latest-article { display: block; padding-bottom: 7rem; }
   .latest-article-image { margin-bottom: 2.5rem; }
   .latest-article-content .journal-entry-meta { margin-bottom: 1.5rem; }
