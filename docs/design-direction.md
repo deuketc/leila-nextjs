@@ -48,6 +48,9 @@ The site should feel like a quiet, art-directed photography archive: architectur
 - Keep static content shapes ready for later Strapi replacement.
 - Keep frontend presentation separate from CMS and API concerns.
 - Use the App Router and server components by default.
+- Use CSS Modules for component-owned styles so visual composition and responsive behavior stay close to the component they serve.
+- Keep shared tokens, reset rules, typography, and layout primitives in `src/app/styles/`; keep `globals.css` as the global entry point.
+- Do not grow a monolithic global stylesheet or create route styles when a component owns the visual behavior.
 - Use `next/image` for local and approved remote photography.
 - Give every meaningful image useful alt text; decorative images should be explicitly treated as decorative.
 - Validate meaningful changes with `npm run lint` and `npm run build`.
