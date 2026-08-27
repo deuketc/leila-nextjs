@@ -132,7 +132,10 @@ nav a:hover, .text-link:hover, .contact-email:hover { color: var(--accent); }
   }
   .home-intro h1 {
     font-size: clamp(10rem, 11vw, 14rem);
-    max-width: 1200px;
+    max-width: 1500px;
+  }
+  .home-intro h1 span {
+    white-space: nowrap;
   }
   .home-intro .intro-copy {
     font-size: clamp(1.25rem, 1.45vw, 1.6rem);
