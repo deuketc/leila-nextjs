@@ -70,6 +70,9 @@ nav a:hover, .text-link:hover, .contact-email:hover { color: var(--accent); }
   filter: grayscale(100%);
 }
 .home-intro-copy {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100svh - 5.5rem);
   width: 92vw;
   padding-bottom: 7rem;
   padding-top: clamp(5rem, 13vw, 11rem);
@@ -96,7 +99,8 @@ nav a:hover, .text-link:hover, .contact-email:hover { color: var(--accent); }
   margin-left: 5%;
 }
 .home-intro .intro-copy {
-  margin-left: 44%;
+  margin-left: 0;
+  margin-top: auto;
 }
 .home-intro .text-link {
   margin-left: 44%;
@@ -469,8 +473,13 @@ h2 { font-size: clamp(2.6rem, 5vw, 5rem); line-height: 0.95; margin-bottom: 0; }
     top: auto;
     width: 88%;
   }
-  .home-intro-copy { padding-bottom: 7rem; padding-top: 3.5rem; }
-  .home-intro-copy { width: 92vw; }
+  .home-intro-copy {
+    display: block;
+    min-height: auto;
+    padding-bottom: 7rem;
+    padding-top: 3.5rem;
+    width: 92vw;
+  }
   .home-intro-copy .eyebrow { margin-left: 0; }
   .home-intro h1 { font-size: clamp(4rem, 17vw, 7.5rem); margin-bottom: 2.5rem; width: 100%; }
   .home-intro h1 span:nth-child(2), .home-intro h1 span:nth-child(3) { margin-left: 0; }
