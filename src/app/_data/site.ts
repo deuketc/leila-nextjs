@@ -14,6 +14,8 @@ export type GalleryImage = {
   imageAlt: string;
 };
 
+export type InstagramImage = GalleryImage;
+
 export type JournalEntry = {
   slug: string;
   title: string;
@@ -111,6 +113,34 @@ export const projects: Project[] = [
 ];
 
 export const latestProject = projects[0];
+
+export const instagramImages: InstagramImage[] = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=85",
+    imageAlt: "Soft light across a quiet coastal landscape",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85",
+    imageAlt: "A cup of coffee on a wooden table",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=85",
+    imageAlt: "A field of wildflowers in morning light",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=900&q=85",
+    imageAlt: "Friends gathered together outdoors",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=900&q=85",
+    imageAlt: "Fresh ingredients arranged on a kitchen table",
+  },
+];
 
 export const journalEntries: JournalEntry[] = [
   {
