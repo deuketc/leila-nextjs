@@ -1,0 +1,36 @@
+.wordmark {
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.01em;
+}
+.wordmark span { color: var(--accent); }
+nav a, .eyebrow, .site-footer, .project-meta, .project-location {
+  font-size: 0.69rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+nav a, .text-link, .contact-email { transition: color 180ms ease; }
+nav a:hover, .text-link:hover, .contact-email:hover { color: var(--accent); }
+.eyebrow { color: var(--muted); margin: 0 0 1.5rem; }
+h1, h2, p { margin-top: 0; }
+h1, h2 {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+h1 { font-size: clamp(3.8rem, 9vw, 8.5rem); line-height: 0.86; margin-bottom: 2.5rem; max-width: 830px; }
+h2 { font-size: clamp(2.6rem, 5vw, 5rem); line-height: 0.95; margin-bottom: 0; }
+.intro-copy, .page-heading > p:last-child {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 380px;
+}
+.text-link {
+  border-bottom: 1px solid var(--ink);
+  display: inline-flex;
+  font-size: 0.82rem;
+  gap: 0.7rem;
+  margin-top: 2rem;
+  padding-bottom: 0.45rem;
+}

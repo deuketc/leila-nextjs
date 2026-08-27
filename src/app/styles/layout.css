@@ -1,0 +1,29 @@
+.site-header, .site-footer, .page-shell {
+  margin: 0 auto;
+  width: 92vw;
+  padding-left: clamp(1.25rem, 4vw, 4.5rem);
+  padding-right: clamp(1.25rem, 4vw, 4.5rem);
+}
+
+.site-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  width: 100%;
+}
+
+nav { display: flex; gap: clamp(1rem, 3vw, 3rem); margin-left: auto; }
+.site-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.inner-page { min-height: calc(100vh - 10rem); padding-bottom: 8rem; padding-top: clamp(5rem, 10vw, 9rem); }
+.page-heading { margin-bottom: 7rem; max-width: 800px; }
+.project-list { margin-top: 2rem; }

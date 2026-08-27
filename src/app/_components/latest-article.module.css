@@ -1,0 +1,21 @@
+.section {
+  align-items: center;
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: clamp(2rem, 8vw, 9rem);
+  grid-template-columns: minmax(280px, 1.15fr) minmax(260px, 0.85fr);
+  padding-bottom: 8rem;
+  padding-top: 2rem;
+}
+.image { aspect-ratio: 1.25; background: #ded9d0; overflow: hidden; position: relative; }
+.image img { object-fit: cover; transition: transform 500ms cubic-bezier(0.2, 0.7, 0.2, 1); }
+.section:hover .image img { transform: scale(1.035); }
+.content { max-width: 440px; }
+.content :global(.journal-entry-meta) { margin-bottom: 3rem; }
+.content h2 { font-size: clamp(2.6rem, 5vw, 5rem); line-height: 0.95; margin-bottom: 1.5rem; }
+.content > p:not(.eyebrow) { color: var(--muted); line-height: 1.6; max-width: 360px; }
+@media (max-width: 700px) {
+  .section { display: block; padding-bottom: 7rem; }
+  .image { margin-bottom: 2.5rem; }
+  .content :global(.journal-entry-meta) { margin-bottom: 1.5rem; }
+}

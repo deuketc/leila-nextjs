@@ -1,20 +1,21 @@
 import Link from "next/link";
 
 import { navigation } from "../_data/site";
+import styles from "./site-header.module.css";
 
 export function SiteHeader() {
   return (
-    <header className="site-header">
+    <header className={`${styles.header} site-header`}>
       <Link
-        className="wordmark"
+        className={styles.wordmark}
         href="/"
         aria-label="Leila Khan photography home"
       >
         Leila <span>Khan</span>
       </Link>
-      <nav aria-label="Main navigation">
+      <nav className={styles.nav} aria-label="Main navigation">
         {navigation.map((item) => (
-          <Link key={item.href} href={item.href}>
+          <Link className={styles.navLink} key={item.href} href={item.href}>
             {item.label}
           </Link>
         ))}
@@ -25,7 +26,7 @@ export function SiteHeader() {
 
 export function SiteFooter() {
   return (
-    <footer className="site-footer">
+    <footer className={`${styles.footer} site-footer`}>
       <span>Leila Khan Photography</span>
       <span>Auckland / Worldwide</span>
       <span>© {new Date().getFullYear()} Leila Khan</span>

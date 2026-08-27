@@ -1,0 +1,9 @@
+.header { align-items: center; display: flex; justify-content: space-between; padding-bottom: 2rem; padding-top: 2rem; width: 100%; }
+.wordmark { font-family: var(--font-display), sans-serif; font-size: 1.8rem; letter-spacing: 0.01em; }
+.wordmark span { color: var(--accent); }
+.nav { display: flex; gap: clamp(1rem, 3vw, 3rem); margin-left: auto; }
+.navLink { font-size: 0.69rem; letter-spacing: 0.12em; text-transform: uppercase; transition: color 180ms ease; }
+.navLink:hover { color: var(--accent); }
+.footer { border-top: 1px solid var(--line); color: var(--muted); display: flex; justify-content: space-between; padding-bottom: 2rem; padding-top: 2rem; width: 92vw; }
+.footer span { font-size: 0.69rem; letter-spacing: 0.12em; text-transform: uppercase; }
+@media (max-width: 700px) { .nav { gap: 0.8rem; } .navLink { font-size: 0.6rem; } .footer { flex-wrap: wrap; gap: 1rem; line-height: 1.5; } .footer span:last-child { width: 100%; } }
