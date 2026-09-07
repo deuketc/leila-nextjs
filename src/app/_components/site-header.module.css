@@ -1,9 +1,49 @@
-.header { align-items: center; display: flex; justify-content: space-between; padding-bottom: 2rem; padding-top: 2rem; width: 100%; }
-.wordmark { font-family: var(--font-display), sans-serif; font-size: 1.8rem; letter-spacing: 0.01em; }
+.header { align-items: center; display: flex; justify-content: space-between; padding-bottom: 2rem; padding-top: 2rem; position: relative; width: 100%; }
+.wordmark { font-family: var(--font-display), sans-serif; font-size: 1.8rem; letter-spacing: 0.01em; position: relative; z-index: 21; }
 .wordmark span { color: var(--accent); }
 .nav { display: flex; gap: clamp(1rem, 3vw, 3rem); margin-left: auto; }
-.navLink { font-size: 0.69rem; letter-spacing: 0.12em; text-transform: uppercase; transition: color 180ms ease; }
+.navLink { font-size: clamp(1rem, 1vw, 1.2rem); letter-spacing: 0.12em; text-transform: uppercase; transition: color 180ms ease; }
 .navLink:hover { color: var(--accent); }
+.menuToggle { display: none; }
+.mobileNav { display: none; }
 .footer { border-top: 1px solid var(--line); color: var(--muted); display: flex; justify-content: space-between; padding-bottom: 2rem; padding-top: 2rem; width: 92vw; }
 .footer span { font-size: 0.69rem; letter-spacing: 0.12em; text-transform: uppercase; }
-@media (max-width: 700px) { .nav { gap: 0.8rem; } .navLink { font-size: 0.6rem; } .footer { flex-wrap: wrap; gap: 1rem; line-height: 1.5; } .footer span:last-child { width: 100%; } }
+@media (max-width: 700px) {
+  .nav { display: none; }
+  .menuToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: auto;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 21;
+  }
+  .menuToggle span { background: var(--ink); display: block; height: 2px; transition: transform 200ms ease; width: 24px; }
+  .menuToggleOpen span:first-child { transform: translateY(4px) rotate(45deg); }
+  .menuToggleOpen span:last-child { transform: translateY(-4px) rotate(-45deg); }
+  .mobileNav {
+    align-items: flex-start;
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    inset: 0;
+    justify-content: center;
+    opacity: 0;
+    padding: 0 8vw;
+    pointer-events: none;
+    position: fixed;
+    transform: translateY(-0.75rem);
+    transition: opacity 260ms ease, transform 260ms ease;
+    z-index: 20;
+  }
+  .mobileNavOpen { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  .mobileNavLink { font-family: var(--font-display), sans-serif; font-size: clamp(2.4rem, 11vw, 3.6rem); letter-spacing: -0.02em; transition: color 180ms ease; }
+  .mobileNavLink:hover { color: var(--accent); }
+  .footer { flex-wrap: wrap; gap: 1rem; line-height: 1.5; }
+  .footer span:last-child { width: 100%; }
+}

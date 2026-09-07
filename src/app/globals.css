@@ -51,7 +51,7 @@
 .journal-entry .text-link { margin-top: 0; }
 .journal-detail {
   padding-bottom: 8rem;
-  padding-top: 3rem;
+  padding-top: var(--space-section-top);
 }
 .back-link {
   color: var(--muted);
@@ -96,7 +96,7 @@
 }
 .gallery-detail {
   padding-bottom: 8rem;
-  padding-top: 3rem;
+  padding-top: var(--space-section-top);
 }
 .gallery-detail-heading {
   margin: clamp(5rem, 12vw, 10rem) auto 5rem;
@@ -162,12 +162,12 @@
   .journal-entry { display: block; }
   .journal-image-wrap { margin-bottom: 1.5rem; }
   .journal-entry-meta { margin-bottom: 1.5rem; }
-  .journal-detail { padding-bottom: 5rem; padding-top: 1.5rem; }
+  .journal-detail { padding-bottom: 5rem; }
   .journal-detail-heading { margin-bottom: 3rem; margin-top: 5rem; }
   .journal-detail-heading .journal-entry-meta { text-align: left; }
   .journal-detail-image { aspect-ratio: 0.9; }
   .journal-body { margin-top: 3.5rem; }
-  .gallery-detail { padding-bottom: 5rem; padding-top: 1.5rem; }
+  .gallery-detail { padding-bottom: 5rem; }
   .gallery-detail-heading { margin-bottom: 3rem; margin-top: 5rem; }
   .gallery-detail-grid { display: block; }
   .gallery-detail-image { margin-bottom: 0.5rem; }
