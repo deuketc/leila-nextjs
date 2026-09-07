@@ -1,11 +1,10 @@
 .section {
   align-items: center;
-  border-top: 1px solid var(--line);
   display: grid;
   gap: clamp(2rem, 8vw, 9rem);
   grid-template-columns: minmax(280px, 1.15fr) minmax(260px, 0.85fr);
   padding-bottom: 8rem;
-  padding-top: 2rem;
+  padding-top: var(--space-section-top);
 }
 .image { aspect-ratio: 1.25; background: var(--placeholder); overflow: hidden; position: relative; }
 .section:hover .image :global(.zoom-media) { transform: scale(1.035); }

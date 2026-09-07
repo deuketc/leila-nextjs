@@ -1,4 +1,4 @@
-.section { border-top: 1px solid var(--line); padding-bottom: 8rem; padding-top: 2rem; }
+.section { border-top: 1px solid var(--line); padding-bottom: 8rem; padding-top: var(--space-section-top); }
 .grid { display: grid; gap: 1rem; grid-template-columns: 1.3fr 1fr 1fr; }
 .image-wrap { aspect-ratio: 0.9; background: var(--placeholder); overflow: hidden; position: relative; }
 .link:hover :global(.zoom-media) { transform: scale(1.035); }

@@ -7,6 +7,7 @@
   --line: #d7d2c8;
   --accent: #c85e3d;
   --placeholder: #ded9d0;
+  --space-section-top: clamp(2rem, 5vw, 4.5rem);
 }
 
 @theme inline {

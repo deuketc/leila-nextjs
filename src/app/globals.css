@@ -1,6 +1,7 @@
 @import "./styles/base.css";
 @import "./styles/layout.css";
 @import "./styles/typography.css";
+@import "./styles/elements.css";
 .section-heading { align-items: baseline; display: flex; justify-content: space-between; margin-bottom: 3rem; }
 .section-heading .eyebrow { margin-bottom: 0; }
 .project-grid {

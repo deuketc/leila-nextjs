@@ -1,4 +1,4 @@
-import { HomeIntro } from "./_components/home-intro";
+import { HomeHero } from "./_components/home-hero";
 import { LatestArticle } from "./_components/latest-article";
 import { LatestGallery } from "./_components/latest-gallery";
 import { FollowInstagram } from "./_components/follow-instagram";
@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <SiteHeader />
       <main>
-        <HomeIntro />
+        <HomeHero />
         <LatestArticle />
         <LatestGallery />
         <FollowInstagram />

@@ -37,7 +37,7 @@ Use this skill to keep new work aligned with the project's visual language. Read
 - Prefer server components unless interaction requires a client component.
 - Use `next/image` for photography.
 - Use CSS Modules for component-owned layout, responsive rules, and motion.
-- Keep design tokens, reset rules, shared typography, and shared layout primitives in `src/app/styles/`.
+- Keep design tokens, reset rules, shared typography, shared layout primitives, and shared interactive elements (buttons, form controls) in `src/app/styles/`.
 - Keep `globals.css` limited to global imports and styles that genuinely cross component boundaries.
 - Use `:global(...)` deliberately when a CSS Module must target a shared global utility.
 - Keep CMS and API work separate from presentation components.

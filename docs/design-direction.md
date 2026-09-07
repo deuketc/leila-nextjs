@@ -26,6 +26,17 @@ The site should feel like a quiet, art-directed photography archive: architectur
 - Keep image crops intentional and make image ratios stable to prevent layout shift.
 - Preserve a clear reading order at every breakpoint, even when the desktop layout is asymmetric.
 
+## Reference Patterns
+
+Distilled from a set of agency/studio portfolio sites (ABCS, Cyclops Club, Studio Nuts, Unikorns, Vucko, Watson, Inertia Studios). Those are loud, type-led agency sites, not photography archives — borrow the structural techniques below, not their tone, dark punctuation sections, or agency copy voice ("we speak emotion").
+
+- Layer two or three small, offset, slightly rotated photographs beside or across a large headline instead of relying on a single hero image — this is a concrete way to execute the broken-grid rule above without adding decoration.
+- Use a weight or color shift within one large heading (e.g. one line in `--muted`, the next in `--ink`) to build hierarchy inside a single display statement, rather than stacking separate headings.
+- Keep scroll cues and section labels lowercase, quiet, and parenthetical ("scroll to explore ↓") rather than styled as buttons — matches "controls minimal, clear, and slightly unexpected."
+- An uneven-width horizontal filmstrip of three or four images is a legitimate alternative to a grid for a "latest work" moment — keep each image's own ratio stable rather than forcing a uniform row height.
+- A small live/local detail (a time, a place, a count) in the header or footer can support the "human" north star in one restrained line — do not let it become a decorative widget.
+- Avoid: emoji or icons substituted into running headline text, marquee/ticker text, full-bleed dark sections used purely as tonal punctuation, and inline agency-voice copy — none of that fits a quiet, human, photography-first site.
+
 ## Motion
 
 - Start with a strong static composition before adding motion.
@@ -49,7 +60,7 @@ The site should feel like a quiet, art-directed photography archive: architectur
 - Keep frontend presentation separate from CMS and API concerns.
 - Use the App Router and server components by default.
 - Use CSS Modules for component-owned styles so visual composition and responsive behavior stay close to the component they serve.
-- Keep shared tokens, reset rules, typography, and layout primitives in `src/app/styles/`; keep `globals.css` as the global entry point.
+- Keep shared tokens, reset rules, typography, layout primitives, and interactive elements (buttons, form controls) in `src/app/styles/`; keep `globals.css` as the global entry point.
 - Do not grow a monolithic global stylesheet or create route styles when a component owns the visual behavior.
 - Use `next/image` for local and approved remote photography.
 - Give every meaningful image useful alt text; decorative images should be explicitly treated as decorative.

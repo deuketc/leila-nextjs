@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { latestProject } from "../_data/site";
-import styles from "./home-intro.module.css";
+import styles from "./home-hero.module.css";
 
-export function HomeIntro() {
+export function HomeHero() {
   return (
     <section className={styles.section}>
       <div className={styles.image}>
@@ -15,6 +15,10 @@ export function HomeIntro() {
           priority
           sizes="(max-width: 700px) 100vw, 62vw"
         />
+        <div className={styles.caption}>
+          <span>{latestProject.title}</span>
+          <span>{latestProject.location}</span>
+        </div>
       </div>
       <div className={`${styles.copy} page-shell`}>
         <p className="eyebrow">Photographer / Auckland + beyond</p>
@@ -26,13 +30,9 @@ export function HomeIntro() {
           Leila Khan makes photographs about presence, place, and the quiet
           details that stay with us.
         </p>
-        <Link className={`${styles.link} text-link`} href="/gallery">
+        <Link className={`${styles.link} button`} href="/gallery">
           Explore the gallery <span aria-hidden="true">↗</span>
         </Link>
-      </div>
-      <div className={styles.caption}>
-        <span>{latestProject.title}</span>
-        <span>{latestProject.location}</span>
       </div>
       <span className={styles.scroll}>
         Scroll to explore <span aria-hidden="true">↓</span>

@@ -1,4 +1,4 @@
-.section { border-top: 1px solid var(--line); padding-bottom: 8rem; padding-top: 2rem; }
+.section { border-top: 1px solid var(--line); padding-bottom: 8rem; padding-top: var(--space-section-top); }
 .heading { align-items: end; display: flex; justify-content: space-between; margin-bottom: 4rem; }
 .heading :global(.eyebrow) { margin-bottom: 0.75rem; }
 .heading h2 { font-size: clamp(3rem, 7vw, 7rem); line-height: 0.85; margin: 0; max-width: 650px; }

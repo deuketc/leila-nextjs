@@ -22,7 +22,7 @@
   width: 92vw;
   z-index: 1;
 }
-.copy :global(.eyebrow) { margin-left: 7%; }
+.copy :global(.eyebrow) { font-size: clamp(0.8rem, 1.1vw, 1rem); margin-left: 7%; }
 .heading {
   font-size: clamp(4.5rem, 11vw, 11.5rem);
   line-height: 1;
@@ -32,30 +32,41 @@
 }
 .heading span { display: block; }
 .heading span:nth-child(2) { margin-left: 14%; }
-.intro-copy { margin-left: 0; margin-top: auto; }
-.link { margin-left: 0; }
+.link { align-self: flex-start; margin-left: 0; margin-top: 4rem; }
 .intro-copy {
-  font-size: clamp(1.05rem, 1.35vw, 1.35rem);
+  margin-left: 0; margin-top: auto;
+  font-size: clamp(1.4rem, 2vw, 2.2rem);
   max-width: none;
   width: 26vw;
 }
-.caption, .scroll {
+.caption {
+  color: var(--muted);
+  display: flex;
+  gap: 1rem;
+  font-size: clamp(0.8rem, 1.1vw, 1rem);
+  letter-spacing: 0.1em;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: calc(100% + 1.25rem);
+  z-index: 2;
+}
+.caption span:last-child { color: var(--ink); }
+.scroll {
   bottom: 2rem;
   color: var(--muted);
-  font-size: 0.66rem;
+  font-size: clamp(0.8rem, 1.1vw, 1rem);
+  left: 50%;
   letter-spacing: 0.1em;
   position: absolute;
   text-transform: uppercase;
+  transform: translateX(-50%);
   z-index: 2;
 }
-.caption { display: flex; gap: 1rem; left: clamp(1.25rem, 4vw, 4.5rem); }
-.caption span:last-child { color: var(--ink); }
-.scroll { right: clamp(1.25rem, 4vw, 4.5rem); }
 @media (min-width: 1600px) {
   .image { height: min(82vh, 980px); width: 61vw; }
   .heading { font-size: clamp(10rem, 11vw, 14rem); max-width: none; width: 72vw; }
   .heading span { white-space: nowrap; }
-  .intro-copy { font-size: clamp(1.25rem, 1.45vw, 1.6rem); max-width: none; width: 26vw; }
 }
 @media (max-width: 700px) {
   .section { min-height: auto; }
@@ -66,6 +77,5 @@
   .heading span:nth-child(2) { margin-left: 0; }
   .intro-copy { margin-left: 12%; width: 76%; }
   .link { margin-left: 12%; }
-  .caption { bottom: 1.5rem; left: 1.25rem; }
-  .scroll { bottom: 1.5rem; right: 1.25rem; }
+  .scroll { bottom: 1.5rem; }
 }
