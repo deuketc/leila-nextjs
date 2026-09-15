@@ -1,0 +1,20 @@
+.section {
+  align-items: center;
+  display: grid;
+  gap: clamp(2rem, 8vw, 9rem);
+  grid-template-columns: minmax(260px, 0.85fr) minmax(280px, 1.15fr);
+  padding-bottom: 8rem;
+  padding-top: var(--space-section-top);
+}
+.image { aspect-ratio: 1.25; background: var(--placeholder); order: 2; overflow: hidden; position: relative; }
+.content { max-width: 440px; order: 1; }
+.section:hover .image :global(.zoom-media) { transform: scale(1.035); }
+.content :global(.journal-entry-meta) { margin-bottom: 3rem; }
+.content h2 { font-size: clamp(2.6rem, 5vw, 5rem); line-height: 0.95; margin-bottom: 1.5rem; }
+.content > p:not(.eyebrow) { color: var(--muted); line-height: 1.6; max-width: 360px; }
+@media (max-width: 700px) {
+  .section { display: block; padding-bottom: 7rem; }
+  .image { margin-bottom: 2.5rem; order: initial; }
+  .content { order: initial; }
+  .content :global(.journal-entry-meta) { margin-bottom: 1.5rem; }
+}

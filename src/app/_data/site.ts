@@ -246,6 +246,8 @@ export const recipeEntries: RecipeEntry[] = [
   },
 ];
 
+export const latestRecipeEntry = recipeEntries[0];
+
 export const navigation = [
   { label: "Gallery", href: "/gallery" },
   { label: "Journal", href: "/journal" },
