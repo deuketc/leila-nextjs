@@ -20,19 +20,16 @@ export function LatestRecipe() {
         />
       </div>
       <div className={styles.content}>
-        <div className="journal-entry-meta">
+        <div className="journal-entry-meta meta-label">
           <span>{latestRecipeEntry.category}</span>
           <span>{latestRecipeEntry.date}</span>
         </div>
-        <p className="eyebrow">Latest from the Kitchen</p>
-        <h2 className={styles.heading} id="recipe-heading">
+        <p className="eyebrow meta-label">Latest from the Kitchen</p>
+        <h2 className="header-2" id="recipe-heading">
           {latestRecipeEntry.title}
         </h2>
-        <p>{latestRecipeEntry.excerpt}</p>
-        <Link
-          className="text-link"
-          href={`/recipes/${latestRecipeEntry.slug}`}
-        >
+        <p className="body-copy">{latestRecipeEntry.excerpt}</p>
+        <Link className="text-link" href={`/recipes/${latestRecipeEntry.slug}`}>
           View recipe <span aria-hidden="true">↗</span>
         </Link>
       </div>

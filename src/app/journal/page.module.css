@@ -1,0 +1,35 @@
+/* Shared by the journal and recipes list pages. */
+.list { border-top: 1px solid var(--line); }
+.entry {
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: clamp(2rem, 6vw, 8rem);
+  grid-template-columns: minmax(220px, 0.7fr) 1.3fr;
+  padding: 2rem 0;
+}
+.image-wrap {
+  aspect-ratio: 1.4;
+  background: var(--placeholder);
+  overflow: hidden;
+  position: relative;
+}
+.entry:hover .image { transform: scale(1.035); }
+.content { max-width: 620px; padding-top: 0.25rem; }
+.entry h2 {
+  font-size: clamp(2.2rem, 4vw, 4.5rem);
+  line-height: 0.95;
+  margin-bottom: 1.25rem;
+}
+.entry p {
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+  max-width: 410px;
+}
+.entry :global(.text-link) { margin-top: 0; }
+@media (max-width: 700px) {
+  .entry { display: block; }
+  .image-wrap { margin-bottom: 1.5rem; }
+  .content :global(.journal-entry-meta) { margin-bottom: 1.5rem; }
+}

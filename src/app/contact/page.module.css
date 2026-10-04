@@ -1,0 +1,15 @@
+.page :global(.page-heading) { margin-bottom: 5rem; }
+.details { border-top: 1px solid var(--line); display: flex; justify-content: space-between; padding-top: 1.5rem; }
+.email {
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+  transition: color 180ms ease;
+}
+.email:hover { color: var(--accent); }
+.meta { color: var(--muted); font-size: 0.8rem; line-height: 1.4; text-align: right; }
+.meta p { margin-bottom: 0.35rem; }
+@media (max-width: 700px) {
+  .details { display: block; }
+  .email { display: block; margin-bottom: 2rem; overflow-wrap: anywhere; }
+  .meta { text-align: left; }
+}

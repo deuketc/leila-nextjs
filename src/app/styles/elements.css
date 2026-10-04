@@ -13,3 +13,18 @@
   white-space: nowrap;
 }
 .button:hover { background: var(--paper); color: var(--ink); }
+.back-link {
+  color: var(--muted);
+  display: inline-flex;
+  font-size: 0.72rem;
+  gap: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 180ms ease;
+}
+.back-link:hover { color: var(--accent); }
+.journal-entry-meta {
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+}

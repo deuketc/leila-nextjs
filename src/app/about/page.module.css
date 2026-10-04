@@ -1,0 +1,20 @@
+.content {
+  align-items: start;
+  display: grid;
+  gap: clamp(2rem, 8vw, 9rem);
+  grid-template-columns: minmax(250px, 0.8fr) 1fr;
+  margin-left: 12%;
+}
+.image { aspect-ratio: 0.78; overflow: hidden; position: relative; }
+.copy { max-width: 430px; padding-top: 4rem; }
+.copy p { color: var(--muted); line-height: 1.7; margin-bottom: 1.5rem; }
+.copy .large-copy {
+  color: var(--ink);
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.05;
+}
+@media (max-width: 700px) {
+  .content { display: block; margin-left: 0; }
+  .copy { padding-top: 2.5rem; }
+}

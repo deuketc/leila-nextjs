@@ -24,8 +24,6 @@
 }
 .copy :global(.eyebrow) { font-size: clamp(0.8rem, 1.1vw, 1rem); margin-left: 7%; }
 .heading {
-  font-size: clamp(4.5rem, 11vw, 11.5rem);
-  line-height: 1;
   margin-bottom: 3rem;
   max-width: none;
   width: 72vw;
@@ -35,31 +33,22 @@
 .link { align-self: flex-start; margin-left: 0; margin-top: 4rem; }
 .intro-copy {
   margin-left: 0; margin-top: auto;
-  font-size: clamp(1.4rem, 2vw, 2.2rem);
   max-width: none;
   width: 26vw;
 }
 .caption {
-  color: var(--muted);
   display: flex;
   gap: 1rem;
-  font-size: clamp(0.8rem, 1.1vw, 1rem);
-  letter-spacing: 0.1em;
   position: absolute;
   right: 0;
-  text-transform: uppercase;
   top: calc(100% + 1.25rem);
   z-index: 2;
 }
 .caption span:last-child { color: var(--ink); }
 .scroll {
   bottom: 2rem;
-  color: var(--muted);
-  font-size: clamp(0.8rem, 1.1vw, 1rem);
   left: 50%;
-  letter-spacing: 0.1em;
   position: absolute;
-  text-transform: uppercase;
   transform: translateX(-50%);
   z-index: 2;
 }

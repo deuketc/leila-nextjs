@@ -10,9 +10,11 @@ export function LatestGallery() {
       className={`${styles.section} page-shell`}
       aria-labelledby="gallery-heading"
     >
-      <div className="section-heading">
-        <p className="eyebrow">Latest gallery</p>
-        <h2 id="gallery-heading">{latestProject.title}</h2>
+      <div className={styles.heading}>
+        <p className="eyebrow meta-label">Latest gallery</p>
+        <h2 className="header-2" id="gallery-heading">
+          {latestProject.title}
+        </h2>
       </div>
       <Link className={styles.link} href={`/gallery/${latestProject.slug}`}>
         <div className={styles.grid}>

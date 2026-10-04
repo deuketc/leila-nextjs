@@ -1,0 +1,48 @@
+/* Shared by the journal and recipe detail pages. */
+.page {
+  padding-bottom: 8rem;
+  padding-top: var(--space-section-top);
+}
+.heading {
+  margin: clamp(5rem, 12vw, 10rem) auto 5rem;
+  max-width: 900px;
+  text-align: center;
+}
+.heading :global(.journal-entry-meta) { margin-bottom: 2rem; text-align: left; }
+.heading h1 {
+  font-size: clamp(3.6rem, 8vw, 8rem);
+  margin-bottom: 2rem;
+  max-width: none;
+}
+.heading > p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 470px;
+}
+.image {
+  aspect-ratio: 1.7;
+  background: var(--placeholder);
+  margin: 0 auto;
+  max-width: 1180px;
+  overflow: hidden;
+  position: relative;
+}
+.image img { object-fit: cover; }
+.body {
+  margin: 5rem auto 0;
+  max-width: 600px;
+}
+.body p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.75rem;
+}
+@media (max-width: 700px) {
+  .page { padding-bottom: 5rem; }
+  .heading { margin-bottom: 3rem; margin-top: 5rem; }
+  .image { aspect-ratio: 0.9; }
+  .body { margin-top: 3.5rem; }
+}

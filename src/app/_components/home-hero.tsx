@@ -15,18 +15,18 @@ export function HomeHero() {
           priority
           sizes="(max-width: 700px) 100vw, 62vw"
         />
-        <div className={styles.caption}>
+        <div className={`${styles.caption} meta-label`}>
           <span>{latestProject.title}</span>
           <span>{latestProject.location}</span>
         </div>
       </div>
       <div className={`${styles.copy} page-shell`}>
         <p className="eyebrow">Photographer / Auckland + beyond</p>
-        <h1 className={styles.heading}>
+        <h1 className={`${styles.heading} header`}>
           <span>Images with</span>
           <span>room to breathe.</span>
         </h1>
-        <p className={styles["intro-copy"]}>
+        <p className={`${styles["intro-copy"]} body-copy`}>
           Leila Khan makes photographs about presence, place, and the quiet
           details that stay with us.
         </p>
@@ -34,7 +34,7 @@ export function HomeHero() {
           Explore the gallery <span aria-hidden="true">↗</span>
         </Link>
       </div>
-      <span className={styles.scroll}>
+      <span className={`${styles.scroll} meta-label`}>
         Scroll to explore <span aria-hidden="true">↓</span>
       </span>
     </section>

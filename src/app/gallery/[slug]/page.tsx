@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
 import { SiteFooter, SiteHeader } from "../../_components/site-header";
+import styles from "./page.module.css";
 import { projects } from "../../_data/site";
 
 type GalleryPageProps = {
@@ -39,20 +40,20 @@ export default async function GalleryDetailPage({ params }: GalleryPageProps) {
   return (
     <>
       <SiteHeader />
-      <main className="page-shell gallery-detail">
+      <main className={`page-shell ${styles.page}`}>
         <Link className="back-link" href="/gallery">
           <span aria-hidden="true">←</span> Back to gallery
         </Link>
-        <div className="gallery-detail-heading">
+        <div className={styles.heading}>
           <p className="eyebrow">
             {project.category} / {project.location}
           </p>
           <h1>{project.title}</h1>
         </div>
-        <div className="gallery-detail-grid">
+        <div className={styles.grid}>
           {project.gallery.map((image, index) => (
             <div
-              className={`gallery-detail-image gallery-detail-image-${index}`}
+              className={index === 0 ? `${styles.image} ${styles.featured}` : styles.image}
               key={image.imageAlt}
             >
               <Image

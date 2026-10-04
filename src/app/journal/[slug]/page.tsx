@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
 import { SiteFooter, SiteHeader } from "../../_components/site-header";
+import styles from "./page.module.css";
 import { journalEntries } from "../../_data/site";
 
 type JournalPageProps = {
@@ -37,11 +38,11 @@ export default async function JournalEntryPage({ params }: JournalPageProps) {
   return (
     <>
       <SiteHeader />
-      <main className="page-shell journal-detail">
+      <main className={`page-shell ${styles.page}`}>
         <Link className="back-link" href="/journal">
           <span aria-hidden="true">←</span> Back to journal
         </Link>
-        <div className="journal-detail-heading">
+        <div className={styles.heading}>
           <div className="journal-entry-meta">
             <span>{entry.category}</span>
             <span>{entry.date}</span>
@@ -49,7 +50,7 @@ export default async function JournalEntryPage({ params }: JournalPageProps) {
           <h1>{entry.title}</h1>
           <p>{entry.excerpt}</p>
         </div>
-        <div className="journal-detail-image">
+        <div className={styles.image}>
           <Image
             src={entry.image}
             alt={entry.imageAlt}
@@ -58,7 +59,7 @@ export default async function JournalEntryPage({ params }: JournalPageProps) {
             priority
           />
         </div>
-        <div className="journal-body">
+        <div className={styles.body}>
           {entry.body.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}

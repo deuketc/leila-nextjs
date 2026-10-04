@@ -26,7 +26,6 @@ nav { display: flex; gap: clamp(1rem, 3vw, 3rem); margin-left: auto; }
 
 .inner-page { min-height: calc(100vh - 10rem); padding-bottom: 8rem; padding-top: clamp(5rem, 10vw, 9rem); }
 .page-heading { margin-bottom: 7rem; max-width: 800px; }
-.project-list { margin-top: 2rem; }
 
 .zoom-media {
   object-fit: cover;

@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 import { SiteFooter, SiteHeader } from "../_components/site-header";
+import styles from "../journal/page.module.css";
 import { recipeEntries } from "../_data/site";
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function RecipesPage() {
   return (
     <>
       <SiteHeader />
-      <main className="page-shell inner-page journal-page">
+      <main className="page-shell inner-page">
         <div className="page-heading">
           <p className="eyebrow">From the kitchen</p>
           <h1>Recipes for gathering.</h1>
@@ -23,23 +24,23 @@ export default function RecipesPage() {
             you are glad to feed.
           </p>
         </div>
-        <div className="journal-list">
+        <div className={styles.list}>
           {recipeEntries.map((entry) => (
             <Link
-              className="journal-entry"
+              className={styles.entry}
               href={`/recipes/${entry.slug}`}
               key={entry.slug}
             >
-              <div className="journal-image-wrap">
+              <div className={styles["image-wrap"]}>
                 <Image
                   src={entry.image}
                   alt={entry.imageAlt}
-                  className="journal-image"
+                  className={styles.image}
                   fill
                   sizes="(max-width: 700px) 100vw, 33vw"
                 />
               </div>
-              <div className="journal-entry-content">
+              <div className={styles.content}>
                 <div className="journal-entry-meta">
                   <span>{entry.category}</span>
                   <span>{entry.date}</span>

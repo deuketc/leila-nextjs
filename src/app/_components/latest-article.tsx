@@ -20,15 +20,15 @@ export function LatestArticle() {
         />
       </div>
       <div className={styles.content}>
-        <div className="journal-entry-meta">
+        <div className="journal-entry-meta meta-label">
           <span>{latestJournalEntry.category}</span>
           <span>{latestJournalEntry.date}</span>
         </div>
-        <p className="eyebrow">Latest from the Journal</p>
-        <h2 className={styles.heading} id="article-heading">
+        <p className="eyebrow meta-label">Latest from the Journal</p>
+        <h2 className="header-2" id="article-heading">
           {latestJournalEntry.title}
         </h2>
-        <p>{latestJournalEntry.excerpt}</p>
+        <p className="body-copy">{latestJournalEntry.excerpt}</p>
         <Link
           className="text-link"
           href={`/journal/${latestJournalEntry.slug}`}

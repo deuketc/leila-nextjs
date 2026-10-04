@@ -7,11 +7,11 @@
   padding-top: var(--space-section-top);
 }
 .image { aspect-ratio: 1.25; background: var(--placeholder); order: 2; overflow: hidden; position: relative; }
-.content { max-width: 440px; order: 1; }
+.content { order: 1; }
 .section:hover .image :global(.zoom-media) { transform: scale(1.035); }
 .content :global(.journal-entry-meta) { margin-bottom: 3rem; }
-.content h2 { font-size: clamp(2.6rem, 5vw, 5rem); line-height: 0.95; margin-bottom: 1.5rem; }
-.content > p:not(.eyebrow) { color: var(--muted); line-height: 1.6; max-width: 360px; }
+.content h2 { margin-bottom: 1.5rem; }
+.content > p:not(.eyebrow) { color: var(--muted); line-height: 1.6; }
 @media (max-width: 700px) {
   .section { display: block; padding-bottom: 7rem; }
   .image { margin-bottom: 2.5rem; order: initial; }

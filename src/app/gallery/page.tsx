@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { ProjectCard } from "../_components/project-card";
 import { SiteFooter, SiteHeader } from "../_components/site-header";
+import styles from "./page.module.css";
 import { projects } from "../_data/site";
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export default function GalleryPage() {
             near and far.
           </p>
         </div>
-        <div className="project-grid project-list">
+        <div className={styles.grid}>
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
